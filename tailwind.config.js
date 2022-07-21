@@ -1,6 +1,5 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './layouts/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class',
   theme: {
     screens: {
       sm: '480px',
@@ -32,6 +31,7 @@ module.exports = {
       gray900: '#111827',
       sky300: '#7dd3fc',
       sky500: '#0ea5e9',
+      brown: '#aa967c',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -40,6 +40,9 @@ module.exports = {
       AsapItal: ['Asap', 'sans-serif'],
     },
     extend: {
+      height: {
+        350: '22rem',
+      },
       textUnderlineOffset: {
         3: '3px',
       },
@@ -49,22 +52,6 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
-      },
-      animation: {
-        move: 'move 1.5s linear infinite',
-      },
-      keyframes: {
-        move: {
-          '0%': {
-            opacity: '0.5',
-          },
-          '30%, 60%': {
-            opacity: '1',
-          },
-          '100%': {
-            opacity: '0.5',
-          },
-        },
       },
     },
   },
